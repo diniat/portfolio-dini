@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import Slider from "@/components/slider/Slider";
+import Contact from "@/components/contact/Contact";
+import About from "@/components/about/About";
 
 export default function Home({ SliderData }) {
   return (
@@ -12,6 +14,8 @@ export default function Home({ SliderData }) {
       </Head>
       <Hero />
       <Slider slides={SliderData} />
+      <About />
+      <Contact />
     </div>
   );
 }

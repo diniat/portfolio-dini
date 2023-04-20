@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import SliderCard from "./SliderCard";
 
@@ -21,9 +20,9 @@ const Slider = ({ slides }) => {
   return (
     <section id="proyectos">
       <div className="max-w-[1240px] mx-auto">
-        <h1 className="text-2xl font-bold text-center p-4">Proyectos</h1>
+        <h1 className="text-4xl font-bold text-center p-4">Proyectos</h1>
         <div className="relative flex justify-center p-4">
-          {SliderData.map((slide, index) => {
+          {slides.map((slide, index) => {
             return (
               <div
                 key={index}
